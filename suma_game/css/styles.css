@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    font-family: 'Nunito', Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background: url('../iconos/fondo.jpg') no-repeat center center fixed; 
+    background-size: cover; 
+}
+
+h1 {
+    color: #333;
+    font-family: 'Sour Gummy', Arial, sans-serif; 
+    font-weight: 700; 
+    font-size: 55px; 
+}
+
+p {
+    font-size: 25px;
+    font-family: 'Sour Gummy', Arial, sans-serif; 
+    font-weight: 700; 
+}
+
+form {
+    margin: 20px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 100px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Sour Gummy', Arial, sans-serif; 
+    font-weight: 500; 
+    background-color: #ff7043;
+    color: white;
+    border: 0px solid;
+    border-radius: 15px; 
+    cursor: pointer;
+    margin-right: 85px; 
+}
+
+
+button:hover {
+    background-color: #db6e43;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #008CBA;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #007bb5;
+}
+
+.sound-control {
+    position: fixed;
+    top: 20px;
+    right: 120px;
+    z-index: 1000;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+.sound-control img {
+    width: 300%;
+    height: 300%;
+    transition: transform 0.3s ease;
+}
+
+.sound-control img:hover {
+    transform: scale(1.2); 
+}
+
+.exercise-list {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 50px; 
+    width: 100%; 
+    max-width: 1500px; 
+    margin: 0 auto 0 210px; 
+}
+
+.exercise-list a {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Sour Gummy', Arial, sans-serif; 
+    font-weight: 700; 
+    font-size: 55px; 
+    background-color: #6ec6ff;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease; 
+}
+
+.exercise-list a.completed {
+    background-color: #888;
+}
+
+.exercise-list a.pending:hover {
+    background-color: #45a049;
+}
+.img-completado {
+    width: 5px;
+    height: 5px;
+}
